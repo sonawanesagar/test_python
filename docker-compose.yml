@@ -1,0 +1,8 @@
+hub:
+  image: quay.mediamath.com/rray/selenium_hub
+  ports:
+    - "4444:4444"
+chrome:
+  image: quay.mediamath.com/rray/selenium_chrome_node
+  links:
+    - hub
